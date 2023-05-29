@@ -19,7 +19,16 @@ const getPopular = async () => {
 
 
 
-    return <div>Popular</div>
+    return <div>
+
+        {popular.map((recipe) => {
+           return(
+            <div>
+               <p>{recipe.title}</p> 
+            </div>
+           );
+        })}
+    </div>
 }
 
 export default Popular
