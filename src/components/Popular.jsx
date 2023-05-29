@@ -26,13 +26,12 @@ function Popular() {
             setPopular(data.recipes);
             console.log(data.recipes);
         }
-
-
-    }
+    };
 
 
 
-    return <div>
+    return (
+    <div>
         <Wrapper>
             <h3>Popular Picks</h3>
             <Splide
@@ -58,6 +57,7 @@ function Popular() {
             </Splide>
         </Wrapper>
     </div>
+    );
 }
 
 const Wrapper = styled.div`
