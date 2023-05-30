@@ -1,12 +1,13 @@
 //rfec (tab)
 import React from 'react'
 import Home from './Home'
+import { Route, Routes } from 'react-router-dom'
 
 function pages() {
   return (
-    <div>
-        <Home />
-    </div>
+    <Routes>
+      <Route path='/' element={<Home />} />
+    </Routes>
   )
 }
 
