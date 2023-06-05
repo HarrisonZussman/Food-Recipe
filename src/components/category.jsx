@@ -1,4 +1,4 @@
-import {FapizzaSlice, FaHamburger} from 'react-icons/fa';
+import {FaPizzaSlice, FaHamburger} from 'react-icons/fa';
 import {GiNoodles, GiChopsticks} from 'react-icons/gi';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
@@ -8,7 +8,7 @@ function category() {
   return (
     <List>
         <SLink to={'/cuisine/Italian'}>
-            <FapizzaSlice/>
+            <FaPizzaSlice/>
             <h4>Italian</h4>
         </SLink>
         <SLink to={'/cuisine/American'}>
@@ -33,7 +33,7 @@ justify-content: center;
 margin: 2rem 0rem;
 `;
 
-const SLink = Styled(NavLink)`
+const SLink = styled(NavLink)`
 display: flex;
 flex-direction: column;
 justify-content: center;
